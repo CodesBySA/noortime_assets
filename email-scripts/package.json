@@ -1,0 +1,17 @@
+{
+  "name": "tadhkir-email-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "invite": "node --env-file=.env send-invite.js",
+    "appreciation": "node --env-file=.env send-appreciation.js",
+    "donation": "node --env-file=.env send-donation-acknowledgment.js"
+  },
+  "dependencies": {
+    "nodemailer": "^8.0.1"
+  }
+}
